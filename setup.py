@@ -1,7 +1,9 @@
 """This module contains the packaging routine for the ``scrapy-algolia-exporter`` package"""
-
 from setuptools import setup, find_packages
-from pip.download import PipSession
+try:  # pip >= 10
+    from pip._internal.download import PipSession
+except ImportError:  # pip <= 9.0.3
+    from pip.download import PipSession
 from pip.req import parse_requirements
 
 
