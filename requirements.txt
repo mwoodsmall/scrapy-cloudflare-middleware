@@ -1,2 +1,2 @@
 Scrapy>=1.0
-cfscrape>=1.9.4
+git://github.com/Sraq-Zit/cloudflare-scrape@master=cfscrape
